@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/lesson01/ex05")
+@WebServlet("/lesson01/test02-01")
 public class GetMethodTest02 extends HttpServlet{
 
 	@Override
@@ -23,7 +23,7 @@ public class GetMethodTest02 extends HttpServlet{
 		
 		PrintWriter out = response.getWriter();
 		
-		out.print(" {\"addtion\":" + (number1 + number2) + "}");
+		out.print(" {\"addtion\":" + (number1 + number2) +", \"subtraction\":" + (number1 - number2) + ", \"mulripliocation\":" + (number1 * number2) + ", \"division\":" + (number1 / number2) + "}" );
 		
 	}	
 }

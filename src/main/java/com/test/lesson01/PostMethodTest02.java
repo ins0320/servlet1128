@@ -32,6 +32,7 @@ public class PostMethodTest02 extends HttpServlet{
 		
 		
 		PrintWriter out = response.getWriter();
+		out.print("<html><head><title>사용자 정보 확인</title><head><body>");
 		
 		if(!id.equals(userMap.get("id"))) {
 			out.print("id가 일치하지 않습니다.");
@@ -40,5 +41,6 @@ public class PostMethodTest02 extends HttpServlet{
 		}else {
 			out.print(userMap.get("name") + "님 환영합니다!");
 		}
+		out.print("</body></html>");
 	}
 }

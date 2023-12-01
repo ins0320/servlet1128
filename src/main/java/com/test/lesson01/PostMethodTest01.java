@@ -22,5 +22,6 @@ public class PostMethodTest01 extends HttpServlet{
 		out.print(name + "님 지원이 완료 되었습니다. <br>");
 		out.print("<b>지원내용</b> <br>");
 		out.print(content);
+		out.print("</body></html>");
 	}
 }	

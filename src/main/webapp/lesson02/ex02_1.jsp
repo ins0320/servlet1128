@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>결과</title>
+<title>결과 페이지</title>
 </head>
 <body>
 	<h1>결과</h1>

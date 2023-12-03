@@ -9,7 +9,7 @@
 <body>
 	<h1>결과</h1>
 	<b>아이디</b>
-	<%-- Servlet에서 사용하는 request.getParameter 방법과 동일함--%>
+	<%--  Servlet에서 사용하는 request.getParameter 방법과 동일함--%>
 	<%= request.getParameter("user_id") %>
 	<br>
 	<b>이름</b>

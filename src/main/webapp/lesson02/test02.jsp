@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>날짜, 시간 링크</title>
 	<!-- bootstrap CDN link -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
@@ -14,7 +14,7 @@
 </head>
 <body>
 	<h1>날짜,시간 링크</h1>
-	<div class="d-flex">
+	<div>
 		<a href="/lesson02/test02_01.jsp?link=time"class="btn btn-info">현재 시간 확인</a>
 		<a href="/lesson02/test02_01.jsp?link=date"class="btn btn-primary">현재 날짜 확인</a>
 	</div>

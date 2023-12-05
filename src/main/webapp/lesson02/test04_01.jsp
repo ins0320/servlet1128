@@ -21,14 +21,29 @@
 	<div class="container">
 		<h3>길이 변환 결과</h3>
 		<%=number %> cm
-		<hr>
-		<%
-			String result ="";
+		<%	
+			String result = "";
 			for(String convert : converts){
-				result += convert;
+				result += convert + " ";
+				if(convert.equals("inch")){
+					double inch = number * 0.393701;
+				%>	<h3> <%= inch %>in </h3>
+				<% }else if(convert.equals("yard")){
+					double yard = number * 0.010936;
+				%> <h3> <%= yard %>yd</h3>	
+				<%}else if(convert.equals("feet")){
+					double feet = number * 0.032808;
+				%> <h3> <%= feet %>ft</h3>	
+				<%}else if (convert.equals("meter")){
+					double meter = number * 0.01;
+				%> <h3> <%= meter %>mt</h3>	
+				<%}
+				
 			}
-		
+			
+
 		%>
+		<hr>
 	</div>
 </body>
 </html>

@@ -20,14 +20,14 @@
 					<div>cm</div>
 				</div>	
 				<!-- 체크박스: 인치, 야드, 피트, 미터 -->
-				<label for="in">인치</label>
-				<input type="checkbox" id="in" name="conversion" value="in">
-				<label for="yd">야드</label>
-				<input type="checkbox" id="yd" name="conversion" value="yd">
-				<label for="ft">피트</label>
-				<input type="checkbox" id="ft" name="conversion" value="ft">
-				<label for="mt">미터</label>
-				<input type="checkbox" id="mt" name="conversion" value="mt">
+				<label for="inch">인치</label>
+				<input type="checkbox" id="inch" name="conversion" value="inch">
+				<label for="yard">야드</label>
+				<input type="checkbox" id="yard" name="conversion" value="yard">
+				<label for="feet">피트</label>
+				<input type="checkbox" id="feet" name="conversion" value="feet">
+				<label for="meter">미터</label>
+				<input type="checkbox" id="meter" name="conversion" value="meter">
 				<div>
 					<button type="submit" class="btn btn-success">변환하기</button>
 				</div>

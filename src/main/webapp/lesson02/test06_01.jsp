@@ -49,19 +49,21 @@
 				<!-- 반복구간 -->
 				<% 
 				
-				String menu = "";
-				String name = "";
-				double point = 0;
+
 				for (Map<String,Object> item: list){
-					if( search.equals(item.get("menu"))){
-				%>
-				
+					if( search.equals(item.get("menu"))){	
+							if(checkPoint.equals("true") && (double)item.get("point") <= 4.0){
+								continue;
+							}
+
+					%>
 					<tr>
 						<td> <%= item.get("menu") %></td>
 						<td> <%=  item.get("name")%></td>
 						<td> <%= item.get("point") %></td>
 					</tr>	
-				<% 	}
+				<% 	 
+					}
 				} %>
 				</tbody>
 			</table>

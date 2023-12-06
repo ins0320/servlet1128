@@ -52,8 +52,9 @@
 
 				for (Map<String,Object> item: list){
 					if( search.equals(item.get("menu"))){	
-							if(checkPoint.equals("true") && (double)item.get("point") <= 4.0){
-								continue;
+							
+						if(checkPoint!= null && checkPoint.equals("true") && (double)item.get("point") <= 4.0){
+								continue; //아래 코드 수행하지 않고 skip
 							}
 
 					%>

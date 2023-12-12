@@ -1,5 +1,6 @@
 package com.test.lesson04;
 
+import java.io.IOException;
 import java.sql.SQLException;
 
 import javax.servlet.annotation.WebServlet;
@@ -12,7 +13,7 @@ import com.test.common.MysqlService;
 @WebServlet("/lesson04/test02Delete")
 public class DeleteTest02  extends HttpServlet{
 	@Override
-	public void doGet(HttpServletRequest request, HttpServletResponse response) {
+	public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
 		
 		int id = Integer.parseInt(request.getParameter("id"));
 		
